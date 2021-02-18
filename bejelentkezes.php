@@ -12,7 +12,7 @@ if(isset($_POST['beSubmit'])){
 		$_SESSION['id']=$row['azonosito'];
 		unset($_SESSION['msg']);
 	}else{
-		$_SESSION['msg']=$_POST['azonosito']."- rossz azonosító/jelszó páros!";
+		$_SESSION['msg']=$_POST['azonosito']."- Rossz azonosító/jelszó páros!";
 		unset($_SESSION['user']);
 	}
 	header('Location:index.php');
